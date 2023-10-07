@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.app_main {
+  background: linear-gradient(
+    139deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(219, 246, 255, 1) 17%,
+    rgba(255, 247, 255, 1) 44%,
+    rgba(229, 234, 247, 1) 71%,
+    rgba(101, 110, 113, 1) 100%
+  );
+}
+
+.search {
+  background: linear-gradient(
+    146deg,
+    rgba(227, 252, 255, 1) 0%,
+    rgba(255, 241, 255, 1) 100%
+  );
+}
+
+.newspage {
+  background: linear-gradient(
+    90deg,
+    rgba(211, 227, 230, 1) 0%,
+    rgba(255, 244, 255, 1) 44%,
+    rgba(192, 202, 203, 1) 100%
+  );
+}
+
+.newstab:hover {
+  box-shadow: 2px 3px 12px black;
+}
+
+.explorecoin {
+  box-shadow: 3px 4px 15px black;
+}
+
+.top40 {
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    189deg,
+    rgba(250, 255, 255, 1) 0%,
+    rgba(230, 255, 255, 1) 50%,
+    rgba(255, 237, 255, 1) 100%
+  );
+}
+
+.top40_shadow {
+  box-shadow: 4px 6px 16px black;
+}
