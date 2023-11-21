@@ -24,7 +24,7 @@ export interface articleImage {
   };
 }
 
-export type HomeNews = {
+export type IHomeNews = {
   name: string;
   image: string | boolean | any;
   thumbnail: string;

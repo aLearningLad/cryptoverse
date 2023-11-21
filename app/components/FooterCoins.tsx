@@ -1,7 +1,6 @@
 "use client";
 
 import { HotCoinTab } from ".";
-import { useHomeHotCoins } from "@/utils/rapidapi";
 import { useState, useEffect } from "react";
 import { useStore } from "../(store)/store";
 import { FooterCoinType } from "@/myTypes";

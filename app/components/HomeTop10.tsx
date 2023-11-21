@@ -2,7 +2,6 @@
 
 import HomeTop10CoinTab from "./HomeTop10CoinTab";
 import Link from "next/link";
-import { useHomeTop10Exchanges } from "@/utils/rapidapi";
 import { useState, useEffect } from "react";
 import { useStore } from "../(store)/store";
 import Image from "next/image";

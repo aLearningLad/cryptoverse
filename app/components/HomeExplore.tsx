@@ -4,7 +4,6 @@ import { HomeExploreCoinTab } from ".";
 import { ImFilter } from "react-icons/im";
 import Link from "next/link";
 import { BsSearch } from "react-icons/bs";
-import { usehomeExploreCoins } from "@/utils/rapidapi";
 import { useEffect, useState } from "react";
 import { useStore } from "../(store)/store";
 import { HomeExploreCoin } from "@/myTypes";

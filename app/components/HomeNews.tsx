@@ -1,16 +1,15 @@
 "use client";
 
-import { useGetHomeNews } from "@/utils/rapidapi";
 import { useEffect, useState } from "react";
 import HomeNewsSlide from "./HomeNewsSlide";
 import { BsChevronDoubleRight } from "react-icons/bs";
 import { Bugatti } from "@/public/assets";
 import { useStore } from "../(store)/store";
-import { HomeNews } from "@/myTypes";
+import { IHomeNews } from "@/myTypes";
 
 const HomeNews = () => {
   const store = useStore();
-  const [homeNews, setHomeNews] = useState<HomeNews[]>([]);
+  const [homeNews, setHomeNews] = useState<IHomeNews[]>([]);
   const [newsIsLoading, setNewsIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -20,6 +19,7 @@ const HomeNews = () => {
       if (news) {
         setHomeNews(news);
         setNewsIsLoading(false);
+        console.log(homeNews);
       }
     };
     getNews();

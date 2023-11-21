@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import axios from "axios";
-import { useState } from "react";
 require("dotenv").config();
 
 const store = (set) => ({
@@ -90,7 +89,6 @@ const store = (set) => ({
 
     const response = await axios.request(homeNewsOptions);
     const news = response.data.value;
-    // console.log(news);
 
     return news;
   },
