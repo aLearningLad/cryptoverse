@@ -2,7 +2,6 @@
 
 import { BsSearch } from "react-icons/bs";
 import { SearchCoinTab } from "../components";
-import { AiFillStar } from "react-icons/ai";
 import { useState } from "react";
 import Link from "next/link";
 import { SearchResultType } from "@/myTypes";
