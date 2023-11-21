@@ -3,14 +3,15 @@
 import { BsSearch } from "react-icons/bs";
 import { SearchCoinTab } from "../components";
 import { AiFillStar } from "react-icons/ai";
-import { useSearch } from "../../utils/rapidapi";
 import { useState } from "react";
 import Link from "next/link";
 import { SearchResultType } from "@/myTypes";
+import { useStore } from "../(store)/store";
 
 const Search = () => {
   const [search, setSearch] = useState("");
   const [searchResult, setSearchResult] = useState<SearchResultType[]>([]);
+  const useSearch = useStore((store) => store.useSearch);
 
   const HandleSearch = async () => {
     const results = await useSearch(search);
